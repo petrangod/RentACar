@@ -1,6 +1,7 @@
 target/
 .classpath
 .project
-.settings
+.settings/
 .tern-project
-
+.idea/
+RentACar.iml
