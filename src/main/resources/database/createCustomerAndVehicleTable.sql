@@ -22,8 +22,6 @@ USE `rent_a_car`;
 --
 
 DROP TABLE IF EXISTS `customer`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `customer` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(45) DEFAULT NULL,
@@ -32,5 +30,19 @@ CREATE TABLE `customer` (
   `age` int(3) DEFAULT NULL,
   `password` varchar(45) NOT NULL ,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+);
+
+--
+-- Table structure for table `vehicle`
+--
+
+DROP TABLE IF EXISTS `vehicle`;
+CREATE TABLE `vehicle` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `brand` varchar(45) DEFAULT NULL,
+  `year` DATE DEFAULT NULL,
+  `power` varchar(10) DEFAULT NULL,
+  `plates` varchar(10) DEFAULT NULL UNIQUE,
+  `type` varchar(10) NOT NULL ,
+  PRIMARY KEY (`id`)
+);
