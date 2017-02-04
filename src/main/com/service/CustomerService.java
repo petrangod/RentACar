@@ -1,12 +1,12 @@
 package main.com.service;
 
-import main.com.entity.Customer;
+import main.com.entity.Person;
 
 import java.util.List;
 
 
 public interface CustomerService {
 
-    List<Customer> getCustomers();
+    List<Person> getCustomers();
 
 }

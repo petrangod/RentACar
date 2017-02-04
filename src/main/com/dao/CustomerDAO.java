@@ -1,13 +1,13 @@
 package main.com.dao;
 
 
-import main.com.entity.Customer;
+import main.com.entity.Person;
 
 import java.util.List;
 
 public interface CustomerDAO {
 
-    List<Customer> getCustomers();
+    List<Person> getCustomers();
 
 
 }

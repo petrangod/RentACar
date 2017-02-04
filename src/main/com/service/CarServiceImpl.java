@@ -1,7 +1,7 @@
 package main.com.service;
 
-import main.com.dao.CustomerDAO;
-import main.com.entity.Person;
+import main.com.dao.CarDAO;
+import main.com.entity.IVehicle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,15 +10,14 @@ import java.util.List;
 
 
 @Service
-public class CustomerServiceImpl implements CustomerService {
+public class CarServiceImpl implements CarService {
 
     @Autowired
-    private CustomerDAO customerDAO;
-
+    private CarDAO carDAO;
 
     @Override
     @Transactional
-    public List<Person> getCustomers() {
-        return customerDAO.getCustomers();
+    public List<IVehicle> getCars() {
+        return carDAO.getCars();
     }
 }
