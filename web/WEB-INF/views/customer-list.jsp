@@ -5,7 +5,7 @@
 </head>
 <body>
 
-    Customer Page .... Malaka Petro !
+    Customer Page ....  Petro !
 
 </body>
 </html>
