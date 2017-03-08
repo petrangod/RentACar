@@ -16,6 +16,7 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = "main.com")
 public class AppConfig extends WebMvcConfigurerAdapter {
 
+
     @Autowired
     RoleToUserProfileConverter roleToUserProfileConverter;
 
